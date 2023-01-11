@@ -1,5 +1,5 @@
 Feature: US1001 Kullanici amazin anasayfada birden fazla urun aratir
-  @wip
+
   Scenario: TC02 Kullanici urunleri aratip test edebilmeli
 
 
