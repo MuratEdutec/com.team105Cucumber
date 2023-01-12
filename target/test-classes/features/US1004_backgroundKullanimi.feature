@@ -1,4 +1,4 @@
-  @wip
+
   Feature: US1004 Kullanici bastaki ortak adimlar icin Background kullanir
 
 
