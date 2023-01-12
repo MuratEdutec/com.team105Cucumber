@@ -72,20 +72,24 @@ public class QualitydemyStepdefinitions {
         cookieKabul.click();
     }
 
+
+
+
+    @And("kullanici kutusuna manuel olarak {string} yazar")
+    public void kullaniciKutusunaManuelOlarakYazar(String username) {
+
+        qualitydemyPage.kullaniciEmailKutusu.sendKeys(username);
+    }
+
+    @And("password kutusuna manuel olarak {string} yazar")
+    public void passwordKutusunaManuelOlarakYazar(String password) {
+        qualitydemyPage.passwordKutusu.sendKeys(password);
+    }
+
+
     @And("giris yapilamadigini test eder")
     public void girisYapilamadiginiTestEder() {
 
         Assert.assertTrue(qualitydemyPage.kullaniciEmailKutusu.isDisplayed());
-    }
-
-
-    @And("kullanici kutusuna manuel  {string} yazar")
-    public void kullaniciKutusunaManuelYazar(String username) {
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(username);
-    }
-
-    @And("password kutusuna manuel {string} yazar")
-    public void passwordKutusunaManuelYazar(String password) {
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(password);
     }
 }
